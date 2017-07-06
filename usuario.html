@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="description" content="Ejemplo de HTML5">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <title>Terramovil Florencia</title> 
+	<link rel="stylesheet" href="misestilos.css">
+</head>
+
+<body>
+    <div id="agrupar">
+        <header id="cabecera">
+            <h1>Gestion de usuarios </h1>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li>Inicio</li>
+                <li>Accesorios</li>
+                <li>Reparaciones</li>
+                <li>Cotizaciones</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <section id="seccion">
+            <article id="descripcion">
+                <header>
+                    <h1>Registro de un usuario</h1>
+                </header>
+                <FORM method=post action="cgi-bin/script.pl">
+<TABLE BORDER=0>
+
+<TR>
+<TD>Nombre</TD>
+<TD>
+<INPUT type=text name="nombre">
+</TD>
+</TR>
+
+
+<TR>
+<TD>Apellidos</TD>
+<TD>
+<INPUT type=text name="apellidos">
+</TD>
+</TR>
+
+
+
+<TR>
+<TD>Género</TD>
+<TD>
+Hombre:<INPUT type=radio name="género" value="M">
+<br>
+Mujer: <INPUT type=radio name="género" value="F">
+</TD>
+</TR>
+
+<TR>
+<TD>Ocupación</TD>
+<TD>
+<SELECT name="ocupación">
+<OPTION VALUE="profesor">Profesor</OPTION>
+<OPTION VALUE="estudiante">Estudiante</OPTION>
+<OPTION VALUE="ingeniero">Ingeniero</OPTION>
+<OPTION VALUE="jubilado">Jubilado</OPTION>
+<OPTION VALUE="otro">Otro</OPTION>
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD>Comentarios</TD>
+<TD>
+<TEXTAREA rows="3" name="comentarios">
+Escriba aquí sus comentarios</TEXTAREA>
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN=2>
+<INPUT type="submit" value="Enviar">
+</TD>
+</TR>
+</TABLE>
+</FORM>
+            </article>
+        </section>
+        <aside id="columna">
+            <blockquote>Mensaje número uno</blockquote>
+            <blockquote>Mensaje número dos</blockquote>
+        </aside>
+        <footer id="pie">
+        	<p>Direccion: Florencia Centro, Frente a Importadora Monge, detras de la parada de autobuses.</p>
+		<p>Telefono: 2475 - 5229</p>
+		<p>Derechos Reservados &copy; 2017</p>
+        </footer>
+    </div>
+</body>
+
+</html>

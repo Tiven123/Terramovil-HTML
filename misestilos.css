@@ -52,6 +52,17 @@ body {
     font: bold 14px verdana, sans-serif;
 }
 
+#menu li a {
+   padding: 2px 7px 2px 7px;
+   color: #666;
+   border: 1px solid #ccc;
+   text-decoration: none;
+}
+
+#menu li a:hover{
+   color: #ffffff;
+}
+
 #seccion {
     float: left;
     width: 660px;

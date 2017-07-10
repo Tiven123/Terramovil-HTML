@@ -14,7 +14,7 @@
         <nav id="menu">
             <ul>
                 <li><a href="info.html">Quienes Somos</a></li>
-                <li><a href="#">Accesorios</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
                 <li><a href="#">Reparaciones</a></li>
                 <li><a href="#">Cotizaciones</a></li>
                 <li><a href="#">Contacto</a></li>
@@ -25,69 +25,44 @@
             <article id="descripcion">
                 <header>
                     <h1>Registro de un usuario</h1>
+                    <br/>
                 </header>
-                <FORM method=post action="cgi-bin/script.pl">
-<TABLE BORDER=0>
-
-<TR>
-<TD>Nombre</TD>
-<TD>
-<INPUT type=text name="nombre">
-</TD>
-</TR>
-
-
-<TR>
-<TD>Apellidos</TD>
-<TD>
-<INPUT type=text name="apellidos">
-</TD>
-</TR>
-
-
-
-<TR>
-<TD>Género</TD>
-<TD>
-Hombre:<INPUT type=radio name="género" value="M">
-<br>
-Mujer: <INPUT type=radio name="género" value="F">
-</TD>
-</TR>
-
-<TR>
-<TD>Ocupación</TD>
-<TD>
-<SELECT name="ocupación">
-<OPTION VALUE="profesor">Profesor</OPTION>
-<OPTION VALUE="estudiante">Estudiante</OPTION>
-<OPTION VALUE="ingeniero">Ingeniero</OPTION>
-<OPTION VALUE="jubilado">Jubilado</OPTION>
-<OPTION VALUE="otro">Otro</OPTION>
-</SELECT>
-</TD>
-</TR>
-<TR>
-<TD>Comentarios</TD>
-<TD>
-<TEXTAREA rows="3" name="comentarios">
-Escriba aquí sus comentarios</TEXTAREA>
-</TD>
-</TR>
-
-<TR>
-<TD COLSPAN=2>
-<INPUT type="submit" value="Enviar">
-</TD>
-</TR>
-</TABLE>
-</FORM>
+                <form>
+                    <label for="lblNombre">Nombre:</label>
+                    <input type="text" name="txtNombre" value="" />
+                    <br/><br/>
+                    <label for="lblApellidos">Apellidos:</label>
+                    <input type="text" name="txtApellidos" value="" />
+                    <br/><br/>
+                    <label for="lblSexo">Sexo:</label>
+                    <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre 
+                    <input type="radio" name="sexo" value="mujer" /> Mujer
+                    <br/><br/>
+                    <label for="lblCedula">Cedula:</label>
+                    <input type="number" name="txtCedula" value="" />
+                    <br/><br/>
+                    <label for="lblTelefono">Telefono:</label>
+                    <input type="number" name="txtTelefono" value="" />
+                    <br/><br/>
+                    <label for="lblCelular">Celular:</label>
+                    <input type="number" name="txtCelular" value="" />
+                    <br/><br/>
+                    <label for="lblDireccion">Direccion:</label>
+                    <input type="text" name="txtDireccion" value="" />
+                    <br/><br/>
+                    <label for="lblCorreo">Correo:</label>
+                    <input type="email" name="txtCorreo" value="" />
+                    <br/><br/>
+                    <label for="lblUsuario">Usuario:</label>
+                    <input type="text" name="txtUsuario" value="" />
+                    <br/><br/>
+                    <label for="lblContrasena">Contraseña:</label>
+                    <input type="password" name="txtContrasena" value="" />
+                    <br/><br/>
+                    <INPUT type="submit" value="Guardar">
+                </form>
             </article>
         </section>
-        <aside id="columna">
-            <blockquote>Mensaje número uno</blockquote>
-            <blockquote>Mensaje número dos</blockquote>
-        </aside>
         <footer id="pie">
         	<p>Direccion: Florencia Centro, Frente a Importadora Monge, detras de la parada de autobuses.</p>
 		<p>Telefono: 2475 - 5229</p>

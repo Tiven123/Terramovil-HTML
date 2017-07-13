@@ -18,12 +18,12 @@
     <div class="container">
         <nav class="nav ">
             <ul class="nav nav-tabs bg-info">
-                <li role="presentation" class="active"><a href="index.html">Inicio</a></li>
+                <li role="presentation"><a href="index.html">Inicio</a></li>
                 <li><a href="info.html">Quienes Somos</a></li>
                 <li><a href="accesorios.html">Accesorios</a></li>
                 <li><a href="reparacion.html">Reparaciones</a></li>
                 <li><a href="cotizacion.html">Cotizaciones</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li class="active"><a href="contacto.html">Contacto</a></li>
                 <li><a href="usuarios.html">Registarse</a></li>
             </ul>
         </nav>
@@ -31,29 +31,37 @@
     <div class="container">
         <div class="text-center">
             <section class="main row">
-                <article class="col-xs-12 col-sm-3">
-                </article>
-                <article class="col-xs-12 col-sm-3">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="usuario">Usuario:</label>
-                            <INPUT type=text class="form-control" name="usuario" placeholder="Usuario o Correo" />
-                        </div>
-                        <div class="form-group">
-                            <label for="contrasena">Contrase&ntilde;a:</label>
-                            <input type="password" class="form-control" name="contrasena" value="" placeholder="Contrase&ntilde;a" />
-                        </div>
-                        <button class="btn btn-primary" type="submit">Ingresar</button>
-                        <br><br>
-                    </form>
-                </article>
-                <article class="col-xs-12 col-sm-3">
+                <article class="col-xs-12 col-sm-6">
+                    <h3>Contactos</h3>
+                    <p>Telefono: 2475 5229</p>
+                    <p>Celular + Whatsapp Steven Ortiz: 8740 8718</p>
+                    <p>Celular + Whatsapp David Rodriguez: 8412 2124</p>
+                    <p>Direccion: Florencia centro, frente a Importadora Monge, detras de la parada de autobuses.</p>
+                    <p>Correo: terramovilcr@gmail.com</p>
                 </article>
 
-                <aside class="col-xs-12 col-sm-3 text-justify">
-                    <p> Bienvenido a el sito Web oficial de Terramovil Florencia, gracias por visitarmos si tiene alguna duda o sugerencia favor comunicarse al numero 24 75 52 29.
-                    </p>
-                </aside>
+                <article class="col-xs-12 col-sm-6">
+                    <h3>Escribenos</h3>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="lblNombre">Nombre Completo:</label>
+                            <input type="text" class="form-control" name="txtNombre" placeholder="Nombre Completo" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lblCorreo">Correo:</label>
+                            <input type="email" class="form-control" name="txtCorreo" placeholder="Correo" />
+                        </div>
+                        <div class="form-grup">
+                            <label for="lblCorreo">Mensaje:</label>
+                            <textarea class="form-control" name="message" rows="4" placeholder="Mensaje"></textarea>
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <INPUT type="submit" class="btn btn-primary" value="Enviar" />
+                        </div>
+                    </form>
+                </article>
+
             </section>
         </div>
     </div>

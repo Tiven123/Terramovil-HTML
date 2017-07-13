@@ -2,53 +2,167 @@
 <html lang="es">
 
 <head>
-    <title>Terramovil Florencia</title> 
-	<link rel="stylesheet" href="misestilos.css">
+    <title>Terramovil Florencia</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 
 <body>
-    <div id="agrupar">
-        <header id="cabecera">
-            <h1>Catalogo de Accesorios</h1>
-        </header>
-        <nav id="menu">
-            <ul>
+
+    <header>
+        <div class="container">
+            <h1>Terramovil <small id="florencia">Florencia</small></h1>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <nav class="nav ">
+
+            <ul class="nav nav-tabs bg-info">
+
+                <li role="presentation"><a href="index.html">Inicio</a></li>
                 <li><a href="info.html">Quienes Somos</a></li>
-                <li><a href="accesorios.html">Accesorios</a></li>
-                <li><a href="#">Reparaciones</a></li>
-                <li><a href="#">Cotizaciones</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li class="active"><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="reparacion.html">Reparaciones</a></li>
+                <li><a href="cotizacion.html">Cotizaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="usuarios.html">Registarse</a></li>
+
             </ul>
+
         </nav>
-        <section id="seccion">
-            <article id="descripcion">
-                <header>
-                    <h1>Accesorios</h1>
-                    <br/>
-                </header>
-                <div class="producto">
-                    <h2>Cable Samsung Generico</h2>
-                    <IMG SRC="imagenes/cable_v8_samsung_generico.jpg"/>
-                    <p> ₡ 5 000</p>
-                    <INPUT type="submit" value="Comprar">
-                </div>
-                    <br/>
-                <div class="producto">
-                    <h2>Cargador Samsung Generico</h2>
-                    <IMG SRC="imagenes/cargador_samsung.jpg">
-                    <p> ₡ 10 000</p>
-                    <INPUT type="submit" value="Comprar">
-                </div>
-                
-            </article>
-        </section>
-        <footer id="pie">
-        	<p>Direccion: Florencia Centro, Frente a Importadora Monge, detras de la parada de autobuses.</p>
-		<p>Telefono: 2475 - 5229</p>
-		<p>Derechos Reservados &copy; 2017</p>
-        </footer>
+
     </div>
+
+    <div class="container">
+
+        <div class="text-center">
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++Primera Fila++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <section class="main row">
+
+                <article class="col-xs-12 col-sm-4">
+
+                    <header>
+                        <h4>Cable Samsung <small>Generico</small></h4>
+                    </header>
+
+                    <img src="img/cable_v8_samsung_generico.jpg" class="img-responsive img-rounded" alt="Responsive image">
+                    <p class ="colorAzul lead">₡5.000</p>
+
+                    <footer>
+                        <button type="submit" class="btn btn-primary">Agregar al pedido</button>
+                        <br><br>
+                    </footer>
+
+                </article>
+
+                <article class="col-xs-12 col-sm-4">
+
+                    <header>
+                        <h4>Cargador Samsung <small>Generico</small></h4>
+                    </header>
+
+                    <img src="img/cargador_samsung.jpg" class="img-responsive img-rounded" alt="Responsive image">
+                    <p class ="colorAzul lead">₡10.000</p>
+
+                    <footer>
+                        <button type="submit" class="btn btn-primary">Agregar al pedido</button>
+                        <br><br>
+                    </footer>
+
+                </article>
+
+                <article class="col-xs-12 col-sm-4">
+
+                    <header>
+                        <h4>Cargador Universal <small>Generico</small></h4>
+                    </header>
+
+                    <img src="img/cargador_universal.jpg" class="img-responsive img-rounded" alt="Responsive image">
+                    <p class ="colorAzul lead">₡4.000</p>
+
+                    <footer>
+                        <button type="submit" class="btn btn-primary">Agregar al pedido</button>
+                        <br><br>
+                    </footer>
+
+                </article>
+
+            </section>
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++Segunda Fila++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row">
+
+                <div class="colorGris col-xs-12 col-sm-4">
+
+                    <header>
+                        <h4>Audifino Diadema <small>Generico</small></h4>
+                    </header>
+
+                    <img src="img/orejeras.jpg" class="img-responsive img-rounded" alt="Responsive image">
+                    <p class ="colorAzul lead">₡12.000</p>
+
+                    <footer>
+                        <button type="submit" class="btn btn-primary">Agregar al pedido</button>
+                        <br><br>
+                    </footer>
+
+                </div>
+
+                <div class="colorGris col-xs-12 col-sm-4">
+
+                    <header>
+                        <h4>Power Bank 2.800 mAh <small>Generico</small></h4>
+                    </header>
+
+                    <img src="img/power_bank.jpg" class="img-responsive img-rounded" alt="Responsive image">
+                    <p class ="colorAzul lead">₡8.000</p>
+
+                    <footer>
+                        <button type="submit" class="btn btn-primary">Agregar al pedido</button>
+                        <br><br>
+                    </footer>
+
+                </div>
+
+                <div class="colorGris col-xs-12 col-sm-4">
+
+                    <header>
+                        <h4>Estuche Iphone 6G/6S <small>Generico</small></h4>
+                    </header>
+
+                    <img src="img/estuche.jpg" class="img-responsive img-rounded" alt="Responsive image">
+                    <p class ="colorAzul lead">₡4.000</p>
+
+                    <footer>
+                        <button type="submit" class="btn btn-primary">Agregar al pedido</button>
+                        <br><br>
+                    </footer>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="container text-center">
+
+            <p>Direccion: Florencia centro, frente a Importadora Monge, detras de la parada de autobuses.</p>
+            <p>Telefono: 2475 - 5229</p>
+            <p>Derechos Reservados &copy; 2017</p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
 </body>
 
 </html>

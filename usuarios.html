@@ -2,73 +2,121 @@
 <html lang="es">
 
 <head>
-    <title>Terramovil Florencia</title> 
-	<link rel="stylesheet" href="misestilos.css">
+    <title>Terramovil Florencia</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 
 <body>
-    <div id="agrupar">
-        <header id="cabecera">
-            <h1>Gestion de usuarios </h1>
-        </header>
-        <nav id="menu">
-            <ul>
+    <header>
+        <div class="container">
+            <h1>Terramovil <small id="florencia">Florencia</small></h1>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="nav ">
+            <ul class="nav nav-tabs bg-info">
+                <li role="presentation"><a href="index.html">Inicio</a></li>
                 <li><a href="info.html">Quienes Somos</a></li>
                 <li><a href="accesorios.html">Accesorios</a></li>
-                <li><a href="#">Reparaciones</a></li>
-                <li><a href="#">Cotizaciones</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="usuarios.html">Registarse</a></li>
+                <li><a href="reparacion.html">Reparaciones</a></li>
+                <li><a href="cotizacion.html">Cotizaciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="active"><a href="usuarios.html">Registarse</a></li>
             </ul>
         </nav>
-        <section id="seccion">
-            <article id="descripcion">
+    </div>
+    <div class="container">
+        <section class="main row">
+
+            <article class="col-xs-12 col-sm-3">
+                <img src="img/usuario.jpg" class="img-responsive img-rounded" alt="Responsive image">
+            </article>
+
+            <article class="col-xs-12 col-sm-6">
+
                 <header>
                     <h1>Registro de un usuario</h1>
-                    <br/>
                 </header>
-                <form>
-                    <label for="lblNombre">Nombre:</label>
-                    <input type="text" name="txtNombre" value="" />
-                    <br/><br/>
-                    <label for="lblApellidos">Apellidos:</label>
-                    <input type="text" name="txtApellidos" value="" />
-                    <br/><br/>
-                    <label for="lblSexo">Sexo:</label>
-                    <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre 
-                    <input type="radio" name="sexo" value="mujer" /> Mujer
-                    <br/><br/>
-                    <label for="lblCedula">Cedula:</label>
-                    <input type="number" name="txtCedula" value="" />
-                    <br/><br/>
-                    <label for="lblTelefono">Telefono:</label>
-                    <input type="number" name="txtTelefono" value="" />
-                    <br/><br/>
-                    <label for="lblCelular">Celular:</label>
-                    <input type="number" name="txtCelular" value="" />
-                    <br/><br/>
-                    <label for="lblDireccion">Direccion:</label>
-                    <input type="text" name="txtDireccion" value="" />
-                    <br/><br/>
-                    <label for="lblCorreo">Correo:</label>
-                    <input type="email" name="txtCorreo" value="" />
-                    <br/><br/>
-                    <label for="lblUsuario">Usuario:</label>
-                    <input type="text" name="txtUsuario" value="" />
-                    <br/><br/>
-                    <label for="lblContrasena">Contraseña:</label>
-                    <input type="password" name="txtContrasena" value="" />
-                    <br/><br/>
-                    <INPUT type="submit" value="Guardar">
+
+                <form class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="lblNombre">Nombre:</label>
+                        <input type="text" class="form-control" name="txtNombre" placeholder="Nombre" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lblApellidos">Apellidos:</label>
+                        <input type="text" class="form-control" name="txtApellidos" placeholder="Apellidos" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lblSexo">Sexo:</label>
+                        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+                        <input type="radio" name="sexo" value="mujer" /> Mujer
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lblCedula">Cedula:</label>
+                        <input type="number" class="form-control" name="txtCedula" placeholder="Cedula" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lblTelefono">Telefono:</label>
+                        <input type="number" class="form-control" name="txtTelefono" placeholder="Telefono" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lblCelular">Celular:</label>
+                        <input type="number" class="form-control" name="txtCelular" placeholder="Celular" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lblDireccion">Direccion:</label>
+                        <input type="text" class="form-control" name="txtDireccion" placeholder="Direccion" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lblCorreo">Correo:</label>
+                        <input type="email" class="form-control" name="txtCorreo" placeholder="Correo" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lblUsuario">Usuario:</label>
+                        <input type="text" class="form-control" name="txtUsuario" placeholder="Usuario" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lblContrasena">Contraseña:</label>
+                        <input type="password" class="form-control" name="txtContrasena" placeholder="Contraseña" />
+                    </div>
+
+                    <div class="form-group">
+                        <div class="text-center">
+                            <INPUT type="submit" class="btn btn-primary" value="Registar" />
+                        </div>
+                    </div>
                 </form>
             </article>
+
+            <article class="col-xs-12 col-sm-3">
+                <img src="img/usuario.jpg" class="img-responsive img-rounded" alt="Responsive image">
+            </article>
+
         </section>
-        <footer id="pie">
-        	<p>Direccion: Florencia Centro, Frente a Importadora Monge, detras de la parada de autobuses.</p>
-		<p>Telefono: 2475 - 5229</p>
-		<p>Derechos Reservados &copy; 2017</p>
-        </footer>
     </div>
+    <footer>
+        <div class="container text-center">
+            <p>Direccion: Florencia centro, frente a Importadora Monge, detras de la parada de autobuses.</p>
+            <p>Telefono: 2475 - 5229</p>
+            <p>Derechos Reservados &copy; 2017</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 
 </html>

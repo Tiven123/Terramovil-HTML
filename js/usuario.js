@@ -24,8 +24,9 @@ $(document).ready(function () {
         usuario[4] = document.getElementById("txtCelular").value;
         usuario[5] = document.getElementById("txtDireccion").value;
         usuario[6] = document.getElementById("txtCorreo").value;
-        usuario[8] = document.getElementById("txtUsuario").value;
-        usuario[9] = document.getElementById("txtContrasenna").value;
+        usuario[7] = document.getElementById("txtUsuario").value;
+        usuario[8] = document.getElementById("txtContrasenna").value;
+        usuario[9] = "user";
 
         /* se verifica que no hay campos vacios*/
         //se crea una bandera de error
@@ -51,19 +52,21 @@ $(document).ready(function () {
             localStorage.setItem("Usuarios", JSON.stringify(usuarios));
             // se muestra un mesaje de exito
             alert("Usuario Registrado Exitosamente");
-        }
-        /*Limpiando el formulario*/
-        //se borran todos los datos del fomulario
-        document.getElementById("txtNombre").value = "";
-        document.getElementById("txtApellidos").value = "";
-        document.getElementById("txtCedula").value = "";
-        document.getElementById("txtTelefono").value = "";
-        document.getElementById("txtCelular").value = "";
-        document.getElementById("txtDireccion").value = "";
-        document.getElementById("txtCorreo").value = "";
-        document.getElementById("txtUsuario").value = "";
-        document.getElementById("txtContrasenna").value = "";
 
+            /*Limpiando el formulario*/
+            //se borran todos los datos del fomulario
+            document.getElementById("txtNombre").value = "";
+            document.getElementById("txtApellidos").value = "";
+            document.getElementById("txtCedula").value = "";
+            document.getElementById("txtTelefono").value = "";
+            document.getElementById("txtCelular").value = "";
+            document.getElementById("txtDireccion").value = "";
+            document.getElementById("txtCorreo").value = "";
+            document.getElementById("txtUsuario").value = "";
+            document.getElementById("txtContrasenna").value = "";
+        } else {
+            alert("Verifique los datos");
+        }
     });
 });
 $(document).ready(function () {

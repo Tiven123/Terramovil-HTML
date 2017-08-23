@@ -27,34 +27,23 @@
         </nav>
     </div>
     <div class="container">
-        <table class="table table-bordered ">
+        <table class="table table-bordered " id="listaPedidos">
             <caption class="text-center">Listado de Pedidos</caption>
-            <tr>
-                <td><b>Nombre</b></td>
-                <td><b>Telefono</b></td>
-                <td><b>Direccion</b></td>
-                <td><b>Producto</b></td>
-            </tr>
-            <tr>
-                <td>Steven</td>
-                <td>87408718</td>
-                <td>Platanar San Carlos</td>
-                <td>Cargador Samsung</td>
-            </tr>
-            <tr>
-                <td>Carlos</td>
-                <td>60708090</td>
-                <td>Florencia San Carlos</td>
-                <td>Cable Samsung</td>
-            </tr>
-            <tr>
-                <td>Fabiana</td>
-                <td>70346578</td>
-                <td>Muelle San Carlos</td>
-                <td>Estuche Iphone 6</td>
-            </tr>
-
+            <thead>
+                <tr>
+                    <td><b>Usuario</b></td>
+                    <td><b>Cargador Original</b></td>
+                    <td><b>Cargador Generico</b></td>
+                    <td><b>Cargador Universal</b></td>
+                    <td><b>Diadema</b></td>
+                    <td><b>Power Bank</b></td>
+                    <td><b>Estuche Ip 6</b></td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
         </table>
+        <button type="submit" class="btn btn-success" id="btn-cargar">Cargar Pedidos</button>
     </div>
     <footer>
         <div class="container text-center">
@@ -66,6 +55,8 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <!--script de del formulario -->
+    <script src="js/pedido.js" type="text/javascript"></script>
 </body>
 
 </html>
